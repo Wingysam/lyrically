@@ -1,0 +1,11 @@
+cd
+echo 'Cloning repository.'
+git clone https://github.com/Wingysam/lyrically > /dev/null
+cd lyrically
+echo 'Building.'
+python3 setup.py build > /dev/null
+echo 'Sudo needed for python3 setup.py install.'
+sudo python3 setup.py install > /dev/null
+cd
+echo 'Cleaning up.'
+sudo rm -rf lyrically # Not /. Does not delete your computer.
